@@ -6,7 +6,7 @@
 
 
 
-### Introduccion
+## Introduccion
 
 Prolog (PROgrammation en LOGique) es un lenguaje perteneciente al paradigma logico.
 
@@ -15,7 +15,7 @@ La Programación lógica, junto con la funcional, forma parte de lo que se conoc
 La programación lógica construye una base de conocimientos mediante reglas y hechos.
 
 
-### Algunas caracteristicas
+## Algunas caracteristicas
 
 - No posee efectos colaterales
 - No existe la nocion de tipos de datos
@@ -25,7 +25,7 @@ La programación lógica construye una base de conocimientos mediante reglas y h
 - No siempre es eficiente
 
 
-### Hechos
+## Hechos
 
 Los hechos (o tambien los llaman axiomas en algunos libros) son una declaración o proposición cierta o falsa que establece una relación entre objetos.
 Ver: [01_hechos.pl](fuentes/01_hechos.pl)
@@ -47,7 +47,7 @@ Incluso preguntar cuales son todas las madres y sus hijos:
 madre(MADRE, HIJO).
 ```
 
-### Reglas
+## Reglas
 
 Implicación o inferencia lógica que deduce nuevo conocimiento, la regla permite definir nuevas relaciones apartir de otras ya existentes.
 
@@ -73,7 +73,7 @@ Las reglas pueden ser tan complejas como se quiera, en este caso vemos el ejempl
 Ver: [03_reglas.pl](fuentes/03_reglas.pl)
 
 
-### Operaciones Arimeticas
+## Operaciones Arimeticas
 
 Prolog, como otros lenguajes de programación, es capaz de realizar
 operaciones aritméticas. Aquí nos interesan solo las operaciones más
@@ -138,7 +138,7 @@ preguntar por distinto
 ```
 
 
-### Listas
+## Listas
 
 En prolog una lista es una representación de un conjunto de elementos.
 
@@ -156,7 +156,7 @@ Ver: [04_listas.pl](fuentes/04_listas.pl)
 Probar ademas usar el comando trace para ver la secuencia de ejecución del programa.
 
 
-### Backtracking
+## Backtracking
 
 Prolog siempre consulta su base de conocimiento para verificar que hechos son verdaderos y asi permite la construcción de nuevas reglas, el mecanismo utilizado se conoce como "Backtracking" en donde el objetivo del recorrido es encontrar soluciones para algún problema. 
 
@@ -169,7 +169,7 @@ El recorrido tiene éxito si, procediendo de esta forma, se puede definir por co
 ![](imagenes/backtracking.gif)
 
 
-### Predicados CUT y FAIL
+## Predicados CUT y FAIL
 
 El operador cut `!` siempre tiene éxito y provoca el descarte de todas las (ramas) alternativas que quedaron pendientes de ser exploradas desde el instante en que se utilizó para resolver la regla conteniendo dicho ‘!’.
 
