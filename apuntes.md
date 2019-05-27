@@ -60,7 +60,7 @@ cabeza de la regla :- cuerpo de la regla.
 "X es mortal si X es humano, si la parte derecha falla, la regla da como resultado falso".
 
 ```
-mortal(x) :- humano(x)
+mortal(x) :- humano(x).
 ```
 
 Ver: [02_reglas.pl](fuentes/02_reglas.pl)
@@ -167,3 +167,24 @@ El recorrido tiene éxito si, procediendo de esta forma, se puede definir por co
 
 
 ![](imagenes/backtracking.gif)
+
+
+### Predicados CUT y FAIL
+
+El operador cut `!` siempre tiene éxito y provoca el descarte de todas las (ramas) alternativas que quedaron pendientes de ser exploradas desde el instante en que se utilizó para resolver la regla conteniendo dicho ‘!’.
+
+Sin corte
+
+![](imagenes/nota-sin-corte.png)
+
+Ver: [05_sin_corte.pl](fuentes/04_listas.pl)
+
+
+Con corte
+
+![](imagenes/nota-con-corte.png)
+
+Ver: [06_con_corte.pl](fuentes/04_listas.pl)
+
+
+A menudo se utilizan los predicados ! y fail para hacer cumplir un fracaso evitando que se siga buscando una solución.
