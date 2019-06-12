@@ -169,7 +169,7 @@ El recorrido tiene éxito si, procediendo de esta forma, se puede definir por co
 ![](imagenes/backtracking.gif)
 
 
-## Predicados CUT y FAIL
+## Predicado CUT y FAIL
 
 El operador cut `!` siempre tiene éxito y provoca el descarte de todas las (ramas) alternativas que quedaron pendientes de ser exploradas desde el instante en que se utilizó para resolver la regla conteniendo dicho ‘!’.
 
@@ -188,3 +188,13 @@ Ver: [06_con_corte.pl](fuentes/06_con_corte.pl)
 
 
 A menudo se utilizan los predicados ! y fail para hacer cumplir un fracaso evitando que se siga buscando una solución.
+
+Advertencia! El operador de corte debe ser empleado con cuidado y analizando las consecuencias en cada situación.
+
+Podemos implementar nuestro propio predicado NOT:
+
+```
+negar(X) :- X, !, fail.
+negar(_).
+
+```
