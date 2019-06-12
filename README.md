@@ -1,6 +1,6 @@
 # Introducción a Prolog
 
-## Python Meetup
+## Python Patagonia
 
 ### Carlos Emanuel Balcazar
 
@@ -177,14 +177,14 @@ Sin corte
 
 ![](imagenes/nota-sin-corte.png)
 
-Ver: [05_sin_corte.pl](fuentes/04_listas.pl)
+Ver: [05_sin_corte.pl](fuentes/05_sin_corte.pl)
 
 
 Con corte
 
 ![](imagenes/nota-con-corte.png)
 
-Ver: [06_con_corte.pl](fuentes/04_listas.pl)
+Ver: [06_con_corte.pl](fuentes/06_con_corte.pl)
 
 
 A menudo se utilizan los predicados ! y fail para hacer cumplir un fracaso evitando que se siga buscando una solución.
