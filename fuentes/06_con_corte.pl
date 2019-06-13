@@ -1,10 +1,10 @@
-nota(X, suspenso) :- X < 5, !.
+nota(X, suspenso) :- X < 6, !.
 
-nota(X, aprobado) :- X < 7, !.
+nota(X, aprobado) :- X < 8, !.
 
 nota(X, notable) :- X < 10, !.
 
-nota(X, notable) :- X > 10, !, fail.
+nota(X, fallo) :- X > 10, !, fail.
 
 nota(_, sobresaliente).
 
