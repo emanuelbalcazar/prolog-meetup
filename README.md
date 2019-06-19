@@ -27,7 +27,10 @@ La programación lógica construye una base de conocimientos mediante reglas y h
 
 ## Hechos
 
+Para esta charla usaremos SWI PROLOG [https://www.swi-prolog.org/](https://www.swi-prolog.org/)
+
 Los hechos (o tambien los llaman axiomas en algunos libros) son una declaración o proposición cierta o falsa que establece una relación entre objetos.
+
 Ver: [01_hechos.pl](fuentes/01_hechos.pl)
 
 Hagamos algunas consultas para probar, por ejemplo podemos preguntar quien es la madre de maria:
