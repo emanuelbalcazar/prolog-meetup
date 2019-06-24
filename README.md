@@ -201,3 +201,8 @@ negar(X) :- X, !, fail.
 negar(_).
 
 ```
+
+# Revisar para futuras charlas
+
+- datalog.
+- pylog.
